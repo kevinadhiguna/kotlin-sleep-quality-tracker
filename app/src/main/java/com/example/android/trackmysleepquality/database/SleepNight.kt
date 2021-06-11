@@ -17,6 +17,7 @@
 package com.example.android.trackmysleepquality.database
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 /**
  * SleepNight data class with :
@@ -36,6 +37,7 @@ import androidx.room.Entity
 
 @Entity(tableName = "daily_sleep_quality_table")
 data class SleepNight(
+    @PrimaryKey(autoGenerate = true) // to identify nightId as the primary key, so that Room generates the ID for each entity. This guarantees that the ID for each night is unique.
     var nightId: Long = 0L,
     val startTimeMilli: Long = System.currentTimeMillis(),
     var endTimeMilli: Long = startTimeMilli,
