@@ -3,6 +3,18 @@
 
 [Android Kotlin Fundamentals Codelab 6.1: Create Room Database](https://developer.android.com/codelabs/kotlin-android-training-room-database?hl=en&continue=https%3A%2F%2Fcodelabs.developers.google.com%2F%3Fcat%3Dandroid)
 
+## Preview
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/43397636/121639334-98b83600-cab6-11eb-876c-051e71294e2e.png" width="500" />
+</div>
+
+## Testing
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/43397636/121639244-72929600-cab6-11eb-807f-c47b932a656d.png" />
+</div>
+
 Introduction
 ------------
 
