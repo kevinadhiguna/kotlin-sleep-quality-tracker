@@ -15,3 +15,27 @@
  */
 
 package com.example.android.trackmysleepquality.database
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Update
+
+// Notice that interface SleepDatabaseDao is annotated with @Dao.
+// All DAOs need to be annotated with the @Dao keyword.
+@Dao
+interface SleepDatabaseDao {
+    /**
+     * Inside the body of the interface, add an @Insert annotation.
+     * Below the @Insert, add an insert() function that takes an instance of the Entity class SleepNight as its argument.
+     */
+    @Insert
+    fun insert(night: SleepNight)
+
+    /**
+     * Add an @Update annotation with an update() function for one SleepNight.
+     * The entity that's updated is the entity that has the same key as the one that's passed in.
+     * You can update some or all of the entity's other properties.
+     */
+    @Update
+    fun update(night: SleepNight)
+}
