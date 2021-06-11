@@ -16,7 +16,9 @@
 
 package com.example.android.trackmysleepquality.database
 
+import android.content.Context
 import androidx.room.Database
+import androidx.room.Room
 import androidx.room.RoomDatabase
 
 // Create an abstract class called SleepDatabase that extends RoomDatabase
@@ -40,5 +42,28 @@ abstract class SleepDatabase: RoomDatabase() {
      * The companion object allows clients to access the methods for creating or getting the database without instantiating the class.
      * Since the only purpose of this class is to provide a database, there is no reason to ever instantiate it.
      */
-    companion object {}
+    companion object {
+
+        @Volatile
+        private var INSTANCE: SleepDatabase? = null
+
+        fun getInstance(context: Context): SleepDatabase {
+            synchronized(this) {
+                var instance = INSTANCE
+
+                if (instance == null) {
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        SleepDatabase::class.java,
+                        "sleep_history_database"
+                    )
+                        .fallbackToDestructiveMigration()
+                        .build()
+                    INSTANCE = instance
+                }
+
+                return instance
+            }
+        }
+    }
 }
