@@ -1,7 +1,7 @@
-TrackMySleepQuality - Starter Code
+😴 TrackMySleepQuality
 ==================================
 
-Starter code for Android Kotlin Fundamentals Codelab 6.1 Room
+[Android Kotlin Fundamentals Codelab 6.1: Create Room Database](https://developer.android.com/codelabs/kotlin-android-training-room-database?hl=en&continue=https%3A%2F%2Fcodelabs.developers.google.com%2F%3Fcat%3Dandroid)
 
 Introduction
 ------------
@@ -52,3 +52,5 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+
+[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/kotlin-sleep-quality-tracker)](https://github.com/kevinadhiguna)
