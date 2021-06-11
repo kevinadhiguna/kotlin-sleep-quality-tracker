@@ -15,3 +15,18 @@
  */
 
 package com.example.android.trackmysleepquality.database
+
+import androidx.room.Database
+import androidx.room.RoomDatabase
+
+// Create an abstract class called SleepDatabase that extends RoomDatabase
+
+// The @Database annotation requires several arguments, so that Room can build the database.
+@Database(
+    entities = [SleepNight::class], // Supply the SleepNight as the only item with the list of entities
+    version = 1, // Set the version as 1**.** Whenever you change the schema, you'll have to increase the version number
+    exportSchema = false // Set exportSchema to false, so as not to keep schema version history backups
+)
+abstract class SleepDatabase: RoomDatabase() {
+
+}
