@@ -28,5 +28,10 @@ import androidx.room.RoomDatabase
     exportSchema = false // Set exportSchema to false, so as not to keep schema version history backups
 )
 abstract class SleepDatabase: RoomDatabase() {
-
+    /**
+     * The database needs to know about the DAO.
+     * Inside the body of the class, declare an abstract value that returns the SleepDatabaseDao.
+     * You can have multiple DAOs.
+     */
+    abstract val sleepDatabaseDao: SleepDatabaseDao
 }
