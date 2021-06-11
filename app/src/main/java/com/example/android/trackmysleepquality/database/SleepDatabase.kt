@@ -34,4 +34,11 @@ abstract class SleepDatabase: RoomDatabase() {
      * You can have multiple DAOs.
      */
     abstract val sleepDatabaseDao: SleepDatabaseDao
+
+    /**
+     * Below this abstract value, define a companion object.
+     * The companion object allows clients to access the methods for creating or getting the database without instantiating the class.
+     * Since the only purpose of this class is to provide a database, there is no reason to ever instantiate it.
+     */
+    companion object {}
 }
