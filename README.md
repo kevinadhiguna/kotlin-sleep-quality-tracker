@@ -3,17 +3,23 @@
 
 [Android Kotlin Fundamentals Codelab 6.1: Create Room Database](https://developer.android.com/codelabs/kotlin-android-training-room-database?hl=en&continue=https%3A%2F%2Fcodelabs.developers.google.com%2F%3Fcat%3Dandroid)
 
+<br />
+
 ## Preview
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/43397636/121639334-98b83600-cab6-11eb-876c-051e71294e2e.png" width="500" />
 </div>
 
+<br />
+
 ## Testing
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/43397636/121639244-72929600-cab6-11eb-807f-c47b932a656d.png" />
 </div>
+
+<br />
 
 Introduction
 ------------
@@ -25,6 +31,7 @@ In this codelab, working from this starter app,
 you will implement the Room database that holds the sleep data. 
 You will then use instrumented tests to verify that this backend works. 
 
+<br />
 
 Pre-requisites
 --------------
@@ -39,11 +46,14 @@ You need to know:
   These Architecture Components topics are covered in an earlier codelab in this course.
 * A basic understanding of SQL databases and the SQLite language.
 
+<br />
 
 Getting Started
 ---------------
 
 1. Download and run the app.
+
+<br />
 
 License
 -------
@@ -64,5 +74,7 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+
+<br />
 
 ![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=kotlin-sleep-quality-tracker&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
